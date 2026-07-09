@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths:
       - .github/labels.yml
-      - repos-label-sync.txt
+      - .github/repos-label-sync.txt
       - .github/workflows/sync-labels.yml
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: read
         run: |
-          repos=$(grep -v '^\s*$' repos-label-sync.txt | grep -v '^\s*#' | jq -R . | jq -s -c .)
+          repos=$(grep -v '^\s*$' .github/repos-label-sync.txt | grep -v '^\s*#' | jq -R . | jq -s -c .)
           echo "repos=$repos" >> "$GITHUB_OUTPUT"
 
   sync:

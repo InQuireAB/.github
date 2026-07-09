@@ -1,9 +1,19 @@
 # One owner/repo per line. Used by sync-labels workflow.
-InQuireAB/next-postgres-app-starter
-InQuireAB/engineering-handbook
-InQuireAB/lib-mod-starter
-InQuireAB/render-next-fullstack-postgres-template
+# Excludes InQuireAB/.github (this repo is the source, not a target).
 InQuireAB/authentication-routes-module
 InQuireAB/authorization-module-backend
+InQuireAB/axiom-file-api
+InQuireAB/axiom-web
 InQuireAB/db-mod
+InQuireAB/engineering-handbook
+InQuireAB/geonode-query-api
+InQuireAB/geonode-sync-api
+InQuireAB/geonode-web
+InQuireAB/lib-mod-starter
+InQuireAB/next-postgres-app-starter
+InQuireAB/ng-ui-lib
+InQuireAB/observability-module
+InQuireAB/profile-viewer
+InQuireAB/render-next-express-postgres-template
+InQuireAB/render-next-fullstack-postgres-template
 InQuireAB/ui-lib

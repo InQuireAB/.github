@@ -1,0 +1,50 @@
+name: Work Item - Feature
+description: A customer-facing or capability-building Work Item to deliver within roughly one sprint
+title: "[Work Item][Feature]: "
+labels:
+  - work-item
+  - feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use for feature work that can be planned, assigned, built, and released.
+        Developers branch from Work Items, not Epics.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to be built and why does it matter?
+      placeholder: Build login page with form validation and error handling.
+    validations:
+      required: true
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User story (optional)
+      placeholder: |
+        As a <user>
+        I want <capability>
+        so that <benefit>
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Login form validates required fields
+        - [ ] Error message shown for invalid credentials
+        - [ ] CI passes
+    validations:
+      required: true
+  - type: input
+    id: parent
+    attributes:
+      label: Parent Epic
+      description: Link the Epic this Work Item belongs to (use owner/repo#number for cross-repo links).
+      placeholder: "InQuireAB/next-postgres-app-starter#10"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Dependencies, open questions, or implementation hints.
+      placeholder: Depends on auth API contract being finalized.

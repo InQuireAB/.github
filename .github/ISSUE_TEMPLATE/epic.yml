@@ -1,6 +1,8 @@
 name: Epic
 description: A major capability or initiative that spans multiple Work Items
 title: "[Epic]: "
+labels:
+  - epic
 body:
   - type: markdown
     attributes:
@@ -45,7 +47,8 @@ body:
   - type: textarea
     id: user-story
     attributes:
-      label: User story
+      label: User story (optional)
+      description: Use when a story framing helps. Skip for technical or platform Epics.
       placeholder: |
         As a <user>
         I want <capability>

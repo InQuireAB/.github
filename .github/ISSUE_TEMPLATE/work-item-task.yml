@@ -1,11 +1,14 @@
-name: Work Item
-description: A concrete slice of work that can be planned, assigned, built, and released
-title: "[Work Item]: "
+name: Work Item - Task
+description: A technical, internal, or operational Work Item to deliver within roughly one sprint
+title: "[Work Item][Task]: "
+labels:
+  - work-item
+  - task
 body:
   - type: markdown
     attributes:
       value: |
-        Use for development work that fits roughly one sprint (ideally one pull request).
+        Use for technical or internal work that can be planned, assigned, built, and released.
         Developers branch from Work Items, not Epics.
   - type: textarea
     id: summary

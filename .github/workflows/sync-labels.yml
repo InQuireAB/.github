@@ -1,0 +1,40 @@
+name: Sync repository labels
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/labels.yml
+      - repos-label-sync.txt
+      - .github/workflows/sync-labels.yml
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.read.outputs.repos }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: read
+        run: |
+          repos=$(grep -v '^\s*$' repos-label-sync.txt | grep -v '^\s*#' | jq -R . | jq -s -c .)
+          echo "repos=$repos" >> "$GITHUB_OUTPUT"
+
+  sync:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo: ${{ fromJSON(needs.prepare.outputs.repos) }}
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: kjanat/github-labelmanager@v1
+        with:
+          token: ${{ secrets.ORG_LABEL_SYNC_TOKEN }}
+          repository: ${{ matrix.repo }}
+          config-path: .github/labels.yml

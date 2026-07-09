@@ -1,0 +1,34 @@
+# Canonical label contract for InQuireAB repositories.
+# Synced to target repos via .github/workflows/sync-labels.yml
+labels:
+  - name: epic
+    color: "#fbca04"
+    description: Large initiative spanning multiple Work Items
+
+  - name: work-item
+    color: "#1d76db"
+    description: Executable development work (GitHub Issue Type Work Item)
+
+  - name: feature
+    color: "#a2eeef"
+    description: Work Item subtype for customer-facing capability
+
+  - name: task
+    color: "#bfdadc"
+    description: Work Item subtype for technical or internal work
+
+  - name: bug
+    color: "#d73a4a"
+    description: Broken or regressed behavior
+
+  - name: sprint-meta
+    color: "#5319e7"
+    description: Ceremony issue for sprint plan and scope tracking, not execution work
+
+  - name: internal
+    color: "#cfd3d7"
+    description: Non user-facing enabling work
+
+  - name: chore
+    color: "#fef2c0"
+    description: Maintenance or housekeeping work

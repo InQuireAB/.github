@@ -1,0 +1,9 @@
+# One owner/repo per line. Used by sync-labels workflow.
+InQuireAB/next-postgres-app-starter
+InQuireAB/engineering-handbook
+InQuireAB/lib-mod-starter
+InQuireAB/render-next-fullstack-postgres-template
+InQuireAB/authentication-routes-module
+InQuireAB/authorization-module-backend
+InQuireAB/db-mod
+InQuireAB/ui-lib

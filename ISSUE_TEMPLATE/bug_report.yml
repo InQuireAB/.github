@@ -1,1 +1,45 @@
-
+name: Bug
+description: Incorrect, broken, or regressed behavior in existing functionality
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use for fixes when something should already work, not for new capability.
+        Link to a parent Epic or Work Item when applicable.
+  - type: textarea
+    id: description
+    attributes:
+      label: What is broken?
+      description: Describe the incorrect behavior and what you expected instead.
+      placeholder: Login button does not submit the form when clicked.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know the bug is fixed?
+      placeholder: |
+        - [ ] Login submits successfully
+        - [ ] Error message shown for invalid credentials
+    validations:
+      required: true
+  - type: input
+    id: related
+    attributes:
+      label: Related issues
+      description: Link parent Epic, Work Item, or related bugs (use owner/repo#number for cross-repo links).
+      placeholder: "InQuireAB/next-postgres-app-starter#42"

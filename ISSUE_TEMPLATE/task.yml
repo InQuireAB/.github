@@ -1,1 +1,38 @@
-
+name: Work Item
+description: A concrete slice of work that can be planned, assigned, built, and released
+title: "[Work Item]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use for development work that fits roughly one sprint (ideally one pull request).
+        Developers branch from Work Items, not Epics.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs to be done and why?
+      placeholder: Wire @InQuireAB/db into the app starter health check endpoint.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Health endpoint returns database status
+        - [ ] CI passes
+    validations:
+      required: true
+  - type: input
+    id: parent
+    attributes:
+      label: Parent Epic
+      description: Link the Epic this Work Item belongs to (use owner/repo#number for cross-repo links).
+      placeholder: "InQuireAB/next-postgres-app-starter#10"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Dependencies, open questions, or implementation hints.
+      placeholder: Depends on database module being merged first.

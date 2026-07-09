@@ -1,56 +1,69 @@
-# Customer Requirement
-
-## Customer
-- Kund:
-- Kontaktperson:
-- Mötesdatum:
-
-## Background
-Beskriv bakgrunden till behovet.
-
-## Problem Statement
-Vilket problem försöker kunden lösa?
-
-## Desired Outcome
-Vad vill kunden uppnå?
-
-## User Story
-Som <användare>
-vill jag <funktion>
-så att <nytta>
-
-## Current Situation
-Hur fungerar det idag?
-
-## Proposed Solution (Draft)
-Beskriv eventuella lösningsförslag som diskuterades.
-Kan lämnas tomt.
-
-## Requirements
-
-### Functional Requirements
-- [ ]
-
-### Non-Functional Requirements
-- [ ] Performance
-- [ ] Security
-- [ ] Compliance
-- [ ] Accessibility
-- [ ] Other:
-
-## Open Questions
-- [ ]
-
-## Dependencies
-- [ ]
-
-## Acceptance Criteria (Draft)
-- [ ]
-
-## Notes from Meeting
-Fritext från mötet.
-
-## Attachments
-- Länkar
-- Screenshots
-- Dokument
+name: Epic
+description: A major capability or initiative that spans multiple Work Items
+title: "[Epic]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use for large outcomes that need multiple Work Items to finish.
+        Do not branch from Epics. Break them into Work Items instead.
+  - type: input
+    id: customer
+    attributes:
+      label: Customer
+      placeholder: Customer name
+  - type: input
+    id: contact
+    attributes:
+      label: Contact person
+  - type: input
+    id: meeting-date
+    attributes:
+      label: Meeting date
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Describe the context behind the need.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem is the customer trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should be true when this Epic is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User story
+      placeholder: |
+        As a <user>
+        I want <capability>
+        so that <benefit>
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria (draft)
+      placeholder: |
+        - [ ]
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open questions
+      placeholder: |
+        - [ ]
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes from meeting
+      description: Free text, links, screenshots, or documents.

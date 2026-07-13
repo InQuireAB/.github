@@ -35,19 +35,9 @@ Beskriv hur förändringen har verifierats.
 
 Lägg till skärmbilder före och efter förändringen om användargränssnittet har ändrats.
 
-| Before | After |
-|---|---|
-| <img src="https://github.com/user-attachments/assets/example-before-desktop" alt="Before desktop" width="100%"> | <img src="https://github.com/user-attachments/assets/example-after-desktop" alt="After desktop" width="100%"> |
-| <img src="https://github.com/user-attachments/assets/example-before-mobile" alt="Before mobile" width="100%"> | <img src="https://github.com/user-attachments/assets/example-after-mobile" alt="After mobile" width="100%"> |
+Klistra in bildens URL mellan parenteserna:
 
-<br>
+```md
+![Before](PASTE-BEFORE-IMAGE-URL-HERE)
 
-## Related
-
-Länka till relaterade issues, features eller tasks.
-
-*Exempel:*
-
-- *Closes #123*
-- *Related to #456*
-- *Depends on #789*
+![After](PASTE-AFTER-IMAGE-URL-HERE)

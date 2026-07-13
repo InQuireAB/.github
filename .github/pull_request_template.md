@@ -35,9 +35,19 @@ Beskriv hur förändringen har verifierats.
 
 Lägg till skärmbilder före och efter förändringen om användargränssnittet har ändrats.
 
-Klistra in bildens URL mellan parenteserna:
+| Before | After |
+|---|---|
+| <img src="BEFORE-IMAGE-URL" width="100%"> | <img src="AFTER-IMAGE-URL" width="100%"> |
+| <img src="BEFORE-MOBILE-URL" width="100%"> | <img src="AFTER-MOBILE-URL" width="100%"> |
 
-```md
-![Before](PASTE-BEFORE-IMAGE-URL-HERE)
+<br>
 
-![After](PASTE-AFTER-IMAGE-URL-HERE)
+## Related
+
+Länka till relaterade issues, features eller tasks.
+
+*Exempel:*
+
+- *Closes #123*
+- *Related to #456*
+- *Depends on #789*

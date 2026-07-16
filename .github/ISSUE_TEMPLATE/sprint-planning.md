@@ -1,9 +1,10 @@
 ---
 name: Sprint Planning
 about: Sprint goal, facilitator, and committed work for one 2-week sprint
-title: "Sprint N Planning (DD Mon – DD Mon)"
+title: "Sprint N Planning (dd/mm – dd/mm)"
 labels: sprint-meta
 ---
+
 
 ## Facilitator
 @

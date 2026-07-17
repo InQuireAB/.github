@@ -3,13 +3,16 @@
 #
 # Issue Types (Epic, Work Item, Bug) handle primary classification. Labels here
 # cover only subtypes and ceremony markers that Issue Types cannot express.
+#
+# Colors are chosen for colorblind accessibility: blue/orange/gray/purple/gold
+# differ in hue and brightness, not just pale cyan/teal variants.
 labels:
   - name: feature
-    color: "#a2eeef"
+    color: "#0075ca"
     description: Work Item subtype for customer-facing capability
 
   - name: task
-    color: "#bfdadc"
+    color: "#e9963d"
     description: Work Item subtype for technical or internal work
 
   - name: sprint-meta
@@ -21,5 +24,5 @@ labels:
     description: Non user-facing enabling work
 
   - name: chore
-    color: "#fef2c0"
+    color: "#fbca04"
     description: Maintenance or housekeeping work

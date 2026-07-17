@@ -12,6 +12,7 @@ InQuireAB/geonode-web
 InQuireAB/lib-mod-starter
 InQuireAB/next-postgres-app-starter
 InQuireAB/ng-ui-lib
+InQuireAB/object-storage-mod
 InQuireAB/observability-module
 InQuireAB/profile-viewer
 InQuireAB/render-next-express-postgres-template

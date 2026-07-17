@@ -15,6 +15,4 @@ InQuireAB/ng-ui-lib
 InQuireAB/object-storage-mod
 InQuireAB/observability-module
 InQuireAB/profile-viewer
-InQuireAB/render-next-express-postgres-template
-InQuireAB/render-next-fullstack-postgres-template
 InQuireAB/ui-lib

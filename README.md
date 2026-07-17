@@ -38,3 +38,5 @@ To sync labels across listed repositories:
 1. Ensure repository secret `ORG_LABEL_SYNC_TOKEN` exists in this repository.
 2. Run the **Sync repository labels** workflow manually, or push changes to `.github/labels.yml`.
 3. Keep Organization **Repository labels** defaults aligned for new repositories.
+
+To strip deprecated labels (`work-item`, `epic`, `bug`, GitHub defaults, etc.) from existing issues and pull requests, run the **Cleanup deprecated issue labels** workflow manually.

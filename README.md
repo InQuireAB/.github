@@ -18,14 +18,16 @@ This repository is the canonical home for shared GitHub standards across InQuire
 
 ## Naming conventions
 
-Three layers, three formats. Do not flatten them into one string.
+Issue Types handle primary classification. Labels cover only subtypes and ceremony markers.
 
 | Layer | Format | Examples |
 |---|---|---|
 | GitHub Issue Type (org setting) | Title Case | `Epic`, `Work Item`, `Bug` |
 | Issue title prefix | Title Case | `[Epic]:`, `[Work Item][Feature]:`, `[Bug]:` |
-| Label slug | kebab-case | `epic`, `work-item`, `feature`, `task`, `bug` |
+| Label slug | kebab-case | `feature`, `task`, `sprint-meta`, `internal`, `chore` |
 | Template filename | kebab-case | `work-item-feature.yml`, `work-item-task.yml` |
+
+Filter by Issue Type for primary classification (`type:"Work Item"`, `type:Epic`, `type:Bug`). Use labels only for Work Item subtypes (`label:feature`, `label:task`) or ceremony issues (`label:sprint-meta`).
 
 `Feature` and `Task` are **not** org Issue Types. They are Work Item subtypes expressed through labels (`feature`, `task`) and title prefixes (`[Feature]`, `[Task]`). Both `work-item-feature.yml` and `work-item-task.yml` create issues with type `Work Item`.
 

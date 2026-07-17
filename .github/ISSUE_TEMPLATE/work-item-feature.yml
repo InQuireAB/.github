@@ -3,7 +3,6 @@ description: A customer-facing or capability-building Work Item to deliver withi
 title: "[Work Item][Feature]: "
 type: Work Item
 labels:
-  - work-item
   - feature
 body:
   - type: markdown

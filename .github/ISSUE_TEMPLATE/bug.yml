@@ -2,8 +2,6 @@ name: Bug
 description: Incorrect, broken, or regressed behavior in existing functionality
 title: "[Bug]: "
 type: Bug
-labels:
-  - bug
 body:
   - type: markdown
     attributes:

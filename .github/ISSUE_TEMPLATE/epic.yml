@@ -2,8 +2,6 @@ name: Epic
 description: A major capability or initiative that spans multiple Work Items
 title: "[Epic]: "
 type: Epic
-labels:
-  - epic
 body:
   - type: markdown
     attributes:

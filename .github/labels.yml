@@ -1,17 +1,9 @@
 # Canonical label contract for InQuireAB repositories.
 # Synced to target repos via .github/workflows/sync-labels.yml
 #
-# Naming: org Issue Types use Title Case (Work Item). Label slugs use kebab-case (work-item).
-# Feature and Task are labels only, not org Issue Types.
+# Issue Types (Epic, Work Item, Bug) handle primary classification. Labels here
+# cover only subtypes and ceremony markers that Issue Types cannot express.
 labels:
-  - name: epic
-    color: "#fbca04"
-    description: Large initiative spanning multiple Work Items
-
-  - name: work-item
-    color: "#1d76db"
-    description: Executable development work (GitHub Issue Type Work Item)
-
   - name: feature
     color: "#a2eeef"
     description: Work Item subtype for customer-facing capability
@@ -19,10 +11,6 @@ labels:
   - name: task
     color: "#bfdadc"
     description: Work Item subtype for technical or internal work
-
-  - name: bug
-    color: "#d73a4a"
-    description: Broken or regressed behavior
 
   - name: sprint-meta
     color: "#5319e7"

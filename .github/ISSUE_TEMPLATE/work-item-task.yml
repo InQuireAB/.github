@@ -3,7 +3,6 @@ description: A technical, internal, or operational Work Item to deliver within r
 title: "[Work Item][Task]: "
 type: Work Item
 labels:
-  - work-item
   - task
 body:
   - type: markdown

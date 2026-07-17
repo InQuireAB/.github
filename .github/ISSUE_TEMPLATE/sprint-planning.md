@@ -2,9 +2,9 @@
 name: Sprint Planning
 about: Sprint goal, facilitator, and committed work for one 2-week sprint
 title: "Sprint N Planning (dd/mm – dd/mm)"
+type: Work Item
 labels: sprint-meta
 ---
-
 
 ## Facilitator
 @

@@ -1,5 +1,8 @@
 # Canonical label contract for InQuireAB repositories.
 # Synced to target repos via .github/workflows/sync-labels.yml
+#
+# Naming: org Issue Types use Title Case (Work Item). Label slugs use kebab-case (work-item).
+# Feature and Task are labels only, not org Issue Types.
 labels:
   - name: epic
     color: "#fbca04"

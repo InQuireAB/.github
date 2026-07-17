@@ -1,6 +1,7 @@
 name: Work Item - Task
 description: A technical, internal, or operational Work Item to deliver within roughly one sprint
 title: "[Work Item][Task]: "
+type: Work Item
 labels:
   - work-item
   - task

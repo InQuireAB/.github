@@ -1,6 +1,7 @@
 name: Work Item - Feature
 description: A customer-facing or capability-building Work Item to deliver within roughly one sprint
 title: "[Work Item][Feature]: "
+type: Work Item
 labels:
   - work-item
   - feature

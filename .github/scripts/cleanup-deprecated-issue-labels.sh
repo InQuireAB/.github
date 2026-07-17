@@ -23,39 +23,27 @@ DEPRECATED_LABELS=(
   wontfix
 )
 
-remove_label_from_items() {
-  local item_type="$1"
-  local label="$2"
+delete_label_definition() {
+  local label="$1"
 
-  local numbers
-  numbers="$(gh "$item_type" list \
-    --repo "$REPO" \
-    --label "$label" \
-    --state all \
-    --limit 500 \
-    --json number \
-    --jq '.[].number' 2>/dev/null || true)"
-
-  if [[ -z "$numbers" ]]; then
+  if ! gh label list --repo "$REPO" --limit 200 --json name --jq '.[].name' | grep -Fxq "$label"; then
+    echo "Label '$label' not present in $REPO (skipped)"
     return 0
   fi
 
-  while read -r number; do
-    [[ -z "$number" ]] && continue
-    if [[ "$DRY_RUN" == "true" ]]; then
-      echo "DRY RUN: would remove label '$label' from $REPO $item_type #$number"
-    else
-      echo "Removing label '$label' from $REPO $item_type #$number"
-      gh "$item_type" edit "$number" --repo "$REPO" --remove-label "$label"
-    fi
-  done <<< "$numbers"
+  if [[ "$DRY_RUN" == "true" ]]; then
+    echo "DRY RUN: would delete label '$label' from $REPO"
+    return 0
+  fi
+
+  echo "Deleting label '$label' from $REPO"
+  gh label delete "$label" --repo "$REPO" --yes
 }
 
-echo "Cleaning deprecated labels in $REPO (dry_run=$DRY_RUN)"
+echo "Deleting deprecated label definitions in $REPO (dry_run=$DRY_RUN)"
 
 for label in "${DEPRECATED_LABELS[@]}"; do
-  remove_label_from_items issue "$label"
-  remove_label_from_items pr "$label"
+  delete_label_definition "$label"
 done
 
 echo "Done: $REPO"

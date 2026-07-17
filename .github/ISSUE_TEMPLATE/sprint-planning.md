@@ -1,5 +1,5 @@
 ---
-name: Sprint Planning
+name: Work Item - Sprint Planning
 about: Sprint goal, facilitator, and committed work for one 2-week sprint
 title: "[Work Item][Sprint Meta]: Sprint N (dd/mm – dd/mm)"
 type: Work Item

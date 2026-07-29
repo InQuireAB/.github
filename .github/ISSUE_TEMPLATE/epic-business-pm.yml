@@ -1,0 +1,86 @@
+name: Epic - Business PM
+description: Business initiative owned by PMs, tracked at Epic level
+title: "[Epic][Business]: "
+type: Epic
+labels:
+  - track:business-pm
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use for PM-owned business initiatives.
+        This Epic captures business intent and coordination context.
+        Do not branch from Epics. Split implementation into Work Items when engineering starts.
+
+  - type: input
+    id: business-owner
+    attributes:
+      label: Business owner (PM)
+      placeholder: Full name
+
+  - type: input
+    id: customer-account
+    attributes:
+      label: Customer account
+      placeholder: Customer company name
+    validations:
+      required: true
+
+  - type: input
+    id: customer-contact
+    attributes:
+      label: Customer contact person
+      placeholder: Name and role
+
+  - type: textarea
+    id: business-problem
+    attributes:
+      label: Business problem
+      description: What business problem is this initiative solving?
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired business outcome
+      description: What should be true when this Epic is successful?
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success metrics
+      placeholder: |
+        - [ ] Metric:
+        - [ ] Baseline:
+        - [ ] Target:
+    validations:
+      required: true
+
+  - type: input
+    id: target-date
+    attributes:
+      label: Target date
+      placeholder: YYYY-MM-DD
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Teams, systems, legal/compliance, or external dependencies.
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and assumptions
+      placeholder: |
+        - [ ] Risk:
+        - [ ] Assumption:
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes and references
+      description: Links, docs, meeting notes, or supporting context.

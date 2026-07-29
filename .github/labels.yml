@@ -26,3 +26,8 @@ labels:
   - name: chore
     color: "#fbca04"
     description: Maintenance or housekeeping work
+
+  - name: track:business-pm
+    color: "#1f6feb"
+    description: PM business roadmap Epic track for stakeholder facing planning
+

@@ -1,9 +1,5 @@
 # One owner/repo per line. Used by sync-labels workflow.
 # Excludes InQuireAB/.github (this repo is the source, not a target).
-InQuireAB/authentication-routes-module
-InQuireAB/authorization-module-backend
-InQuireAB/axiom-file-api
-InQuireAB/axiom-web
 InQuireAB/db-mod
 InQuireAB/engineering-handbook
 InQuireAB/geonode-query-api
@@ -11,8 +7,10 @@ InQuireAB/geonode-sync-api
 InQuireAB/geonode-web
 InQuireAB/lib-mod-starter
 InQuireAB/next-postgres-app-starter
-InQuireAB/ng-ui-lib
+InQuireAB/node-worker-starter
 InQuireAB/object-storage-mod
 InQuireAB/observability-module
-InQuireAB/profile-viewer
+InQuireAB/order-estimation-worker
+InQuireAB/queue-mod
 InQuireAB/ui-lib
+InQuireAB/utils-lib

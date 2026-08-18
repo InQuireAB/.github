@@ -33,7 +33,7 @@ body:
       description: Planned or actual release date.
       placeholder: "2026-08-25"
     validations:
-      required: false
+      required: true
   - type: textarea
     id: summary
     attributes:

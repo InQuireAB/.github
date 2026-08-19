@@ -1,0 +1,98 @@
+name: Release Notes
+description: Summarize what's shipping in a release for changelog, comms, and stakeholder visibility
+title: "[Release Notes]: "
+type: Release
+labels:
+  - release
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when preparing release notes for an upcoming or completed release.
+        Link the Work Items/Epics included so the notes can be traced back to their source.
+  - type: input
+    id: customer
+    attributes:
+      label: Customer
+      description: The customer this release note covers.
+      placeholder: Blomsterlandet
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / Tag
+      description: The version number or tag this release note covers.
+      placeholder: v1.4.0
+    validations:
+      required: true
+  - type: input
+    id: release-date
+    attributes:
+      label: Release date
+      description: Planned or actual release date.
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A short, customer-facing overview of what this release delivers.
+      placeholder: This release adds login page validation and improves API error handling.
+    validations:
+      required: true
+  - type: textarea
+    id: related-items
+    attributes:
+      label: Related Work Items / Epics
+      description: Link the Work Items or Epics included in this release (use owner/repo#number for cross-repo links).
+      placeholder: |
+        - InQuireAB/next-postgres-app-starter#10
+        - InQuireAB/next-postgres-app-starter#14
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: New features & improvements
+      description: List new features and enhancements included in this release.
+      placeholder: |
+        - [ ] Login form validation
+        - [ ] Improved error messages on failed auth
+    validations:
+      required: false
+  - type: textarea
+    id: fixes
+    attributes:
+      label: Bug fixes
+      description: List notable bug fixes included in this release.
+      placeholder: |
+        - [ ] Fixed crash on empty password field
+        - [ ] Fixed incorrect timestamp formatting
+    validations:
+      required: false
+  - type: textarea
+    id: breaking-changes
+    attributes:
+      label: Breaking changes (optional)
+      description: Anything consumers need to change or be aware of when upgrading.
+      placeholder: The /login endpoint now requires a CSRF token.
+    validations:
+      required: false
+  - type: textarea
+    id: known-issues
+    attributes:
+      label: Known issues (optional)
+      description: Any known issues shipping with this release that are not blockers.
+      placeholder: Password reset emails may be delayed by a few minutes under high load.
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Deployment notes, rollout plan, or anything else worth flagging.
+      placeholder: Rolling out gradually — 10% of traffic on day 1, full rollout on day 3 if no issues.
+    validations:
+      required: false

@@ -31,3 +31,6 @@ labels:
     color: "#1f6feb"
     description: PM business roadmap Epic track for stakeholder facing planning
 
+  - name: release-note
+    color: "#d4af37"
+    description: Release notes and changelog updates

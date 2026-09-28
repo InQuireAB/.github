@@ -19,6 +19,10 @@ labels:
     color: "#5319e7"
     description: Ceremony issue for sprint plan and scope tracking, not execution work
 
+  - name: sprint-archive
+    color: "#57606a"
+    description: Closed sprint-meta issue kept as the record of a finished sprint
+
   - name: internal
     color: "#cfd3d7"
     description: Non user-facing enabling work

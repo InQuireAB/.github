@@ -24,10 +24,10 @@ Issue Types handle primary classification. Labels cover only subtypes and ceremo
 |---|---|---|
 | GitHub Issue Type (org setting) | Title Case | `Epic`, `Work Item`, `Bug` |
 | Issue title prefix | Title Case | `[Epic]:`, `[Work Item][Feature]:`, `[Bug]:` |
-| Label slug | kebab-case | `feature`, `task`, `sprint-meta`, `internal`, `chore` |
+| Label slug | kebab-case | `feature`, `task`, `sprint-meta`, `sprint-archive`, `internal`, `chore` |
 | Template filename | kebab-case | `work-item-feature.yml`, `work-item-task.yml` |
 
-Filter by Issue Type for primary classification (`type:"Work Item"`, `type:Epic`, `type:Bug`). Use labels only for Work Item subtypes (`label:feature`, `label:task`) or ceremony issues (`label:sprint-meta`).
+Filter by Issue Type for primary classification (`type:"Work Item"`, `type:Epic`, `type:Bug`). Use labels only for Work Item subtypes (`label:feature`, `label:task`) or ceremony issues (`label:sprint-meta`, `label:sprint-archive`). Add `sprint-archive` when a `sprint-meta` issue is closed at the end of the sprint, and leave `sprint-meta` on that issue.
 
 `Feature` and `Task` are **not** org Issue Types. They are Work Item subtypes expressed through labels (`feature`, `task`) and title prefixes (`[Feature]`, `[Task]`). Both `work-item-feature.yml` and `work-item-task.yml` create issues with type `Work Item`.
 
